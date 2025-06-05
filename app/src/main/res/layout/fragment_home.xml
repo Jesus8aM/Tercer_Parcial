@@ -16,18 +16,31 @@
         android:padding="8dp">
 
         <!-- Título grande arriba -->
-        <TextView
-            android:id="@+id/titleNaves"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Naves"
-            android:textColor="#800080"
-            android:textSize="28sp"
-            android:textStyle="bold"
+            android:orientation="horizontal"
             android:gravity="start"
             android:layout_marginStart="10dp"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imageFeria"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/logo_feria" />
+
+            <TextView
+                android:id="@+id/titleNaves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡Bienvenidos a la Feria Tabasco 2025!"
+                android:textColor="#800080"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
 
         <!-- Empiezan las card-->
         <LinearLayout
@@ -50,12 +63,20 @@
                 android:gravity="center_vertical">
 
                 <!-- Imagen -->
-                <ImageView
+                <androidx.cardview.widget.CardView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/logo_feria"
-                    android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp" />
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/logo_nave1"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
 
                 <!-- Título y descripción -->
                 <LinearLayout
@@ -67,7 +88,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Negocios de la Nave 1"
+                        android:text="🌳NAVE 1 GUAYACÁN"
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -75,7 +96,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Venta de ropa y accesorios"
+                        android:text="°Pabellón Nacional Artesanal\n°Foro Indígena\n°Área gastronómica"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
@@ -84,11 +105,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonCard1"
-                android:layout_width="140dp"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:text="Ver más"
-                app:icon="@drawable/baseline_add_circle_24"
-                app:iconPadding="3dp"
+                android:text="+"
                 android:background="@drawable/rounded_button"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="12dp"
@@ -114,12 +133,20 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
 
-                <ImageView
+                <androidx.cardview.widget.CardView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/logo_feria"
-                    android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp" />
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/logo_nave2"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -130,7 +157,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Negocios de la Nave 2"
+                        android:text="🌸NAVE 2 MACUILÍ"
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -138,7 +165,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Comida típica y antojitos"
+                        android:text="°Stands de los 17 municipios\n°Stand de Gobierno de Estado\n°Foro Cultural"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
@@ -147,11 +174,10 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonCard2"
-                android:layout_width="140dp"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:text="Ver más"
-                app:icon="@drawable/baseline_add_circle_24"
-                app:iconPadding="3dp"
+                android:text="+"
+
                 android:background="@drawable/rounded_button"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="12dp"
@@ -178,12 +204,20 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
 
-                <ImageView
+                <androidx.cardview.widget.CardView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/logo_feria"
-                    android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp" />
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/logo_nave3"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -194,7 +228,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Negocios de la Nave 3"
+                        android:text="🔥NAVE 3 FRAMBOYÁN"
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -202,7 +236,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Productos artesanales"
+                        android:text="°Locales comerciales\n°Exposición de artesanías locales"
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
@@ -211,11 +245,10 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonCard3"
-                android:layout_width="140dp"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:text="Ver más"
-                app:icon="@drawable/baseline_add_circle_24"
-                app:iconPadding="3dp"
+                android:text="+"
+
                 android:background="@drawable/rounded_button"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="12dp"
@@ -241,12 +274,20 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
 
-                <ImageView
+                <androidx.cardview.widget.CardView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/logo_feria"
-                    android:scaleType="centerCrop"
-                    android:layout_marginEnd="12dp" />
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/atracciones"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -257,7 +298,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Atracciones y conciertos"
+                        android:text="🎡ATRACCIÓN Y CONCIERTOS"
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -265,7 +306,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Consulta eventos y horarios"
+
                         android:textColor="#FFFFFF"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
@@ -274,28 +315,16 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonCard4"
-                android:layout_width="140dp"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:text="Ver más"
-                app:icon="@drawable/baseline_add_circle_24"
-                app:iconPadding="3dp"
+                android:text="+"
+
                 android:background="@drawable/rounded_button"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="12dp"
                 android:layout_gravity="end"
                 android:textAllCaps="false" />
         </LinearLayout>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonFechasImportantes"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:text="Fechas Importantes"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/rounded_button"
-            android:textColor="#FFFFFF"
-            android:textAllCaps="false" />
 
     </LinearLayout>
 </ScrollView>

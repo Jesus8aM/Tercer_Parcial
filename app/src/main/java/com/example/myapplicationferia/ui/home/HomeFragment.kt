@@ -47,13 +47,10 @@ class HomeFragment : Fragment() {
         }
         binding.buttonCard4.setOnClickListener {
             val bundle = Bundle()
-            bundle.putString("imageUrl", "https://www.tabascohoy.com/wp-content/uploads/2023/05/atracciones-roca-feria-tabasco-2023-juegos-3-1024x906.jpg")
+            bundle.putString("imageUrl", "https://th.bing.com/th/id/OIP.ZstpiZKyv5LNaDOUhfJHbgHaLh?rs=1&pid=ImgDetMain")
             findNavController().navigate(R.id.imageFragment, bundle)
         }
-        //Boton de fechas importantes
-        binding.buttonFechasImportantes.setOnClickListener {
-            findNavController().navigate(R.id.fechasImportantesFragment)
-        }
+
         return root
     }
 

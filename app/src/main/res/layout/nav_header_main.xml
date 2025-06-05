@@ -20,7 +20,7 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/logo_feria"
+        app:srcCompat="@drawable/logo_rest"
         android:background="@drawable/rounded_image"
         android:clipToOutline="true" />
 
